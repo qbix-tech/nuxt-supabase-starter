@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/supabase", "@nuxt/ui", "@nuxt/eslint"],
+  modules: [
+    "@nuxtjs/supabase",
+    "@nuxt/ui",
+    "@nuxt/eslint",
+    "@nuxt/test-utils/module",
+  ],
 
   colorMode: {
     preference: "system",
