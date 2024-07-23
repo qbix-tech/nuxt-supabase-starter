@@ -25,5 +25,17 @@ export default defineNuxtConfig({
   supabase: {
     url: process.env.SUPABASE_URL,
     key: process.env.SUPABASE_KEY,
+    serviceKey: process.env.SUPABASE_SERVICE_KEY,
+    redirect: true,
+    redirectOptions: {
+      login: "/login",
+      callback: "/confirm",
+      // routes to include that will enable redirect
+      include: undefined,
+      // routes to exclude that will disable redirect
+      exclude: [],
+      // if true, will redirect to the original route after login
+      cookieRedirect: true,
+    },
   },
 });
