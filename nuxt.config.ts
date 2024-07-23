@@ -9,6 +9,8 @@ export default defineNuxtConfig({
     "@nuxt/test-utils/module",
   ],
 
+  ssr: false,
+
   colorMode: {
     preference: "system",
   },
