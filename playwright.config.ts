@@ -9,7 +9,7 @@ export default defineConfig<ConfigOptions>({
     },
   },
   timeout: 2 * 60 * 1000, // 2 minutes
-  testDir: "tests/pw/",
+  testDir: "tests/e2e/",
   reporter: process.env.CI
     ? [["github"], ["html", { open: "never" }]]
     : [["list"], ["html", { open: "never" }]],
