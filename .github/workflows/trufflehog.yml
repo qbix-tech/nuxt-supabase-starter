@@ -16,7 +16,7 @@ jobs:
   main:
     name: secret-scan
     # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: gha-runner-ubuntu
     steps:
       - name: 'Setup jq'
         uses: dcarbone/install-jq-action@v2

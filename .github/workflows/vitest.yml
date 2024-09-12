@@ -11,7 +11,7 @@ on:
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: self-hosted
+    runs-on: gha-runner-ubuntu
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
